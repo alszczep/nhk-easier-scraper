@@ -13,3 +13,5 @@ Simple app for getting the latest unread article from [NHK Easier](https://nhkea
 `npm run count` - print a number of articles read so far
 
 If you don't want to type these commands every time, you can use a script suitable for your OS (examples in the `scripts` folder). I can be placed e.g. on the desktop and run with a double click. `cd` paths in the scripts should be adjusted to the actual location of the project.
+
+`npm run build` - this will run when installing dependencies with npm - you may need to run it manually if any changes are made to the code
