@@ -8,7 +8,12 @@ Simple app for getting the latest unread article from [NHK Easier](https://nhkea
 
 ## Usage
 
-`npm run get-article` - get the next article url - in addition to the console output, it will copy a produced link to the clipboard
+`npm run get-article [maxId] [minId]` - get the next article url - in addition to the console output, it will copy a produced link to the clipboard
+
+- [maxId] - optional, instead of starting with the latest article, it will start with the one with the given ID
+- [minId] - optional, will stop returning articles with ID lower than the given one
+
+  How to find the ID for a certain article? When on the article page, there is a number at the end of the URL, e.g. for `https://nhkeasier.com/story/1234/` the ID is `1234`.
 
 `npm run count` - print a number of articles read so far
 
