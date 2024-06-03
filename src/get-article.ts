@@ -26,7 +26,7 @@ const run = async () => {
   const parsedHtml = parse(html);
 
   const href = parsedHtml
-    .querySelector("main > article > h4 > a")
+    .querySelector("article > h4 > a")
     ?.getAttribute("href");
   if (!href) {
     throw new Error("Error while getting the article link");
